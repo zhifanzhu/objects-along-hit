@@ -1,0 +1,128 @@
+description: "Baseline-Dynamic"
+
+# Debug
+action_video:
+    save: True                  # Save action video, compare with original
+
+save_pth: True
+
+# Running arguments
+debug_index: null
+debug_locate: null              # str, e.g. P01_01_42472_42784
+index_from: 0
+index_to: 99999999
+only_cat: null
+skip_existing: True            # Skip existing results if fmt % pattern is saved
+
+hydra:
+    sweep:
+        dir: outputs/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    run:
+        dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+dataset:
+    version: 'arctic_stable_v1'
+    image_sets: 'DATA_STORAGE/arctic_outputs/stable_grasps_v3_frag_valid_min20.csv'
+    # occlude_level: 'all' # 'all' / 'ho' / 'none' 
+
+preprocess:
+    ihoi_box_expand: 0.3
+    out_of_image_fill: -1  # was 0
+    patch_crop_method: 'hand_bbox'
+
+homan:
+    version: 'dynamic'
+    hand_init: 'gt'  # 'frankmocap' / 'gt'
+    optimize_hand: False 
+
+    scale_mode: 'scalar'            # Object scale mode: 'depth' / 'scalar' / 'xyz'
+    rot_init:
+        default:
+            method: 'learnt-10'
+
+        arctic_box:
+            method: 'default'
+        arctic_capsulemachine:
+            method: 'default'
+        arctic_espressomachine:
+            method: 'default'
+        arctic_ketchup:
+            method: 'default'
+        arctic_laptop:
+            method: 'default'
+        arctic_microwave:
+            method: 'default'
+        arctic_mixer:
+            method: 'default'
+        arctic_notebook:
+            method: 'default'
+        arctic_phone:
+            method: 'default'
+        arctic_scissors:
+            method: 'default'
+        arctic_waffleiron:
+            method: 'default'
+    
+    scale_init:
+        arctic_box:                 'gt'
+        arctic_capsulemachine:      'gt'
+        arctic_espressomachine:     'gt'
+        arctic_ketchup:             'gt'
+        arctic_laptop:              'gt'
+        arctic_microwave:           'gt'
+        arctic_mixer:               'gt'
+        arctic_notebook:            'gt'
+        arctic_phone:               'gt'
+        arctic_scissors:            'gt'
+        arctic_waffleiron:          'gt'
+
+    transl_init_method:     'learnt-mean'   # 'zero' / 'fingers'(finger centers) / 'mask' / 'gt'
+    rotation_regularization: False  # NotImplmented
+    scale_regularization: False
+
+optim_mv:
+    num_source: 30                 # How many images to take from the clip
+    num_eval: 30
+    num_inits: 50
+    num_inits_parallel: 5            # For #-verts == 500, divide by 2
+    train_size: 30                   # How many images to run in parallel
+
+    optimize_obj_rot:       True
+    optimize_obj_transl:    True
+    optimize_obj_scale:     False
+
+    # per epoch
+    lr: 1e-2
+    num_iters: 50
+    vis_interval: -1  # 25
+    iter_tqdm: True
+    obj_sil_func: l2                # 'l2_iou', 'l2'. Before Feb-25, default is l2_iou
+    loss:
+        mask:
+            weight: 1.0
+        inside:  # push loss
+            weight: 0.1  # was 1.0
+            num_nearest_points: 3   # For each p on obj, number of nearest points in hand
+        close:  # pull loss
+            weight: 0.1
+            num_priors: 5           # 5 for fingers, 8 for all regions
+            reduce: 'avg'           # 'avg' / 'min'
+            num_nearest_points: 1   # For each p on hand, number of nearest points in obj
+
+            contact_consistency:
+                weight: 10.0
+                method: ???         # one of ['min_over_pairs', 'min_over_smooth', 'fullmat_over_pairs', 'fullmat_over_smooth']
+                regional_reduce: 'none'           # 'none' / 'min' / 'avg'
+
+        obj_upright:
+            weight: 0
+            apply_to: {'bowl'}
+        
+        verbose: False              # to print loss values
+
+    criterion: 'iou'
+    eval_unsafe: False
+
+    verts_smooth_weight:       0  # temporal smoothing of HOMan
+
+post_refine: False

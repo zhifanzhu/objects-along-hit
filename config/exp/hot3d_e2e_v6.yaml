@@ -1,0 +1,44 @@
+# @package _global_
+description: "HOT3D Timeline Passing"
+make_timeline_video: True
+skip_exsiting: True
+
+use_old_sca: True                       # For cvpr submission, we use old sca, this is to keep-up with the old ones
+
+# Stage control
+which_only: 'fullpassing'              # one of {'fullpassing', 'static', 'inhand'}. 
+                                       # i.e. Passing, A-only or C-only
+segi_strategy: 'two-circle'            # one of {'normal', 'one-way', 'circle', 'two-circle'},
+                                       # see potim/utils/propagation_helpers.py:segi_scheduler()
+            
+dataset:
+    version: 'hot3d'
+    json_path: ./code_hot3d/timelines/hot3d_hit.json 
+    skip_dynamic: False
+    use_preextract: True                    # Use the preextracted data from projectariatools
+    ignore_cats: [
+        'aria_small',
+        'vase',
+        'flask',
+        'dumbbell_5lb',
+        'spoon_wooden',
+        'dvd_remote',
+        'holder_black',                     # Something is wrong with this object, it is not showing up in optimisation
+    ]                                       # Catogories for which we do not have reduced meshes
+
+    max_samples_per_seg: 30
+    force_max_samples: True
+
+    inhand_pose_init: 'learnt-10'           # Only useful for inhand_only. Or 'gt' or 'learnt-10' or 'learnt-6'
+    static_init_method: ???                 # multi_upright or priors ? 'multi_upright' 'upright' 'priors'
+
+
+optim_mv:
+    num_inits_parallel: 1                   # TODO: I still couldn't make num_parallel_inits=2 work, due to best_sd has bsize 2 while potim might only have 1
+
+    optimize_obj_scale: False          # HOT3D always false
+
+    # per epoch
+    num_iters: 100 # 100, 200
+
+    save_optim_video: False

@@ -1,0 +1,2672 @@
+[
+  {
+    "timeline_name": "P30_107_left_bowl_51561_52251",
+    "vid": "P30_107",
+    "mp4_name": "P30_107_51307_51566_51653_51753_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 51561,
+        "ed": 51651,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 51653,
+        "ed": 52251,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 51561,
+    "total_end": 52251
+  },
+  {
+    "timeline_name": "P01_09_left_plate_155777_156033",
+    "vid": "P01_09",
+    "mp4_name": "P01_09_155208_155859_156206_left_plate",
+    "cat": "plate",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 155777,
+        "ed": 155840,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 155840,
+        "ed": 155866,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 155868,
+        "ed": 156033,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 155777,
+    "total_end": 156033
+  },
+  {
+    "timeline_name": "P01_104_left_cup_1658_1988",
+    "vid": "P01_104",
+    "mp4_name": "P01_104_1528_1704_1800_1900_left_cup",
+    "cat": "cup",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 1658,
+        "ed": 1703,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 1705,
+        "ed": 1988,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 1658,
+    "total_end": 1988
+  },
+  {
+    "timeline_name": "P01_14_left_pan_23242_23896",
+    "vid": "P01_14",
+    "mp4_name": "P01_14_23571_23828_24507_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 23242,
+        "ed": 23709,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 23711,
+        "ed": 23896,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 23242,
+    "total_end": 23896
+  },
+  {
+    "timeline_name": "P01_14_left_pan_41304_42036",
+    "vid": "P01_14",
+    "mp4_name": "P01_14_41227_42074_42495_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 41304,
+        "ed": 41784,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 41785,
+        "ed": 41841,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 41843,
+        "ed": 42036,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 41304,
+    "total_end": 42036
+  },
+  {
+    "timeline_name": "P01_14_left_pan_60418_60906",
+    "vid": "P01_14",
+    "mp4_name": "P01_14_59311_59846_60599_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 60418,
+        "ed": 60521,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 60521,
+        "ed": 60906,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 60418,
+    "total_end": 60906
+  },
+  {
+    "timeline_name": "P02_09_left_bottle_11527_12267",
+    "vid": "P02_09",
+    "mp4_name": "P02_09_10963_11593_12107_left_bottle",
+    "cat": "bottle",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 11527,
+        "ed": 11830,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 11830,
+        "ed": 12085,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 12085,
+        "ed": 12267,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 11527,
+    "total_end": 12267
+  },
+  {
+    "timeline_name": "P02_09_left_bottle_29247_30547",
+    "vid": "P02_09",
+    "mp4_name": "P02_09_28381_29845_29864_30430_left_bottle",
+    "cat": "bottle",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 29247,
+        "ed": 29795,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 29795,
+        "ed": 29845,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 29847,
+        "ed": 29947,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 29947,
+        "ed": 29993,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 29993,
+        "ed": 30547,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 29247,
+    "total_end": 30547
+  },
+  {
+    "timeline_name": "P02_101_right_plate_3729_4634",
+    "vid": "P02_101",
+    "mp4_name": "P02_101_3564_4001_4180_right_plate",
+    "cat": "plate",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 3729,
+        "ed": 3938,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 3938,
+        "ed": 3999,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 4000,
+        "ed": 4034,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 4035,
+        "ed": 4079,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 4079,
+        "ed": 4634,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 3729,
+    "total_end": 4634
+  },
+  {
+    "timeline_name": "P02_135_left_mug_123_270",
+    "vid": "P02_135",
+    "mp4_name": "P02_135_124_224_255_401_left_mug",
+    "cat": "mug",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 123,
+        "ed": 226,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 227,
+        "ed": 270,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 123,
+    "total_end": 270
+  },
+  {
+    "timeline_name": "P02_135_right_mug_12908_13063",
+    "vid": "P02_135",
+    "mp4_name": "P02_135_12782_12944_12970_13063_right_mug",
+    "cat": "mug",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 12908,
+        "ed": 12979,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 12980,
+        "ed": 13063,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 12908,
+    "total_end": 13063
+  },
+  {
+    "timeline_name": "P02_135_left_mug_79_266",
+    "vid": "P02_135",
+    "mp4_name": "P02_135_276_350_left_mug",
+    "cat": "mug",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 79,
+        "ed": 227,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 228,
+        "ed": 266,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 79,
+    "total_end": 266
+  },
+  {
+    "timeline_name": "P03_03_right_plate_4054_4265",
+    "vid": "P03_03",
+    "mp4_name": "P03_03_3815_4071_4115_4215_right_plate",
+    "cat": "plate",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 4054,
+        "ed": 4120,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 4120,
+        "ed": 4265,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 4054,
+    "total_end": 4265
+  },
+  {
+    "timeline_name": "P04_110_left_mug_25559_26384",
+    "vid": "P04_110",
+    "mp4_name": "P04_110_25914_26026_26100_left_mug",
+    "cat": "mug",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 25559,
+        "ed": 25939,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 25939,
+        "ed": 26029,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 26030,
+        "ed": 26384,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 25559,
+    "total_end": 26384
+  },
+  {
+    "timeline_name": "P04_110_left_bowl_30250_31109",
+    "vid": "P04_110",
+    "mp4_name": "P04_110_30374_30838_31404_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 30250,
+        "ed": 30403,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 30403,
+        "ed": 30416,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 30416,
+        "ed": 30704,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 30704,
+        "ed": 30761,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 30763,
+        "ed": 31109,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 30250,
+    "total_end": 31109
+  },
+  {
+    "timeline_name": "P04_110_left_bowl_31298_32097",
+    "vid": "P04_110",
+    "mp4_name": "P04_110_30850_31309_31375_31551_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 31298,
+        "ed": 31498,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 31498,
+        "ed": 31539,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 31539,
+        "ed": 32097,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 31298,
+    "total_end": 32097
+  },
+  {
+    "timeline_name": "P04_110_right_bowl_31449_32085",
+    "vid": "P04_110",
+    "mp4_name": "P04_110_31245_31451_31673_right_bowl",
+    "cat": "bowl",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 31449,
+        "ed": 31485,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 31486,
+        "ed": 31529,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 31529,
+        "ed": 32085,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 31449,
+    "total_end": 32085
+  },
+  {
+    "timeline_name": "P04_121_left_bowl_27045_27955",
+    "vid": "P04_121",
+    "mp4_name": "P04_121_27157_27302_27342_27614_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 27045,
+        "ed": 27073,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 27073,
+        "ed": 27298,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 27300,
+        "ed": 27489,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 27488,
+        "ed": 27568,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 27568,
+        "ed": 27955,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 27045,
+    "total_end": 27955
+  },
+  {
+    "timeline_name": "P04_121_left_bowl_49393_51492",
+    "vid": "P04_121",
+    "mp4_name": "P04_121_49928_50111_50233_50883_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 49393,
+        "ed": 49970,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 49971,
+        "ed": 49991,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 49993,
+        "ed": 51492,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 49393,
+    "total_end": 51492
+  },
+  {
+    "timeline_name": "P05_08_left_bottle_1768_3169",
+    "vid": "P05_08",
+    "mp4_name": "P05_08_2071_2353_2567_3123_left_bottle",
+    "cat": "bottle",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 1768,
+        "ed": 2321,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 2321,
+        "ed": 2366,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 2368,
+        "ed": 2615,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 2616,
+        "ed": 3139,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 3139,
+        "ed": 3169,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 1768,
+    "total_end": 3169
+  },
+  {
+    "timeline_name": "P05_08_right_saucepan_886_1503",
+    "vid": "P05_08",
+    "mp4_name": "P05_08_540_903_1329_right_saucepan",
+    "cat": "saucepan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 886,
+        "ed": 1174,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 1174,
+        "ed": 1503,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 886,
+    "total_end": 1503
+  },
+  {
+    "timeline_name": "P06_108_right_pan_7404_7935",
+    "vid": "P06_108",
+    "mp4_name": "P06_108_7250_8055_8617_right_pan",
+    "cat": "pan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 7404,
+        "ed": 7840,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 7840,
+        "ed": 7935,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 7404,
+    "total_end": 7935
+  },
+  {
+    "timeline_name": "P08_16_right_pan_17223_17868",
+    "vid": "P08_16",
+    "mp4_name": "P08_16_17347_17839_18109_right_pan",
+    "cat": "pan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 17223,
+        "ed": 17821,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 17823,
+        "ed": 17868,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 17223,
+    "total_end": 17868
+  },
+  {
+    "timeline_name": "P08_21_right_plate_77907_78585",
+    "vid": "P08_21",
+    "mp4_name": "P08_21_77693_78551_79692_right_plate",
+    "cat": "plate",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 77907,
+        "ed": 78504,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 78506,
+        "ed": 78585,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 77907,
+    "total_end": 78585
+  },
+  {
+    "timeline_name": "P09_02_left_pan_16807_18279",
+    "vid": "P09_02",
+    "mp4_name": "P09_02_17038_17508_19056_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 16807,
+        "ed": 17354,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 17354,
+        "ed": 17406,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 17406,
+        "ed": 17680,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 17681,
+        "ed": 17901,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 17901,
+        "ed": 18279,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 16807,
+    "total_end": 18279
+  },
+  {
+    "timeline_name": "P09_02_left_bowl_21343_22185",
+    "vid": "P09_02",
+    "mp4_name": "P09_02_20896_21364_21532_22000_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 21343,
+        "ed": 21798,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 21799,
+        "ed": 22185,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 21343,
+    "total_end": 22185
+  },
+  {
+    "timeline_name": "P09_02_left_cup_3117_4212",
+    "vid": "P09_02",
+    "mp4_name": "P09_02_3427_3785_4366_left_cup",
+    "cat": "cup",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 3117,
+        "ed": 3717,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 3717,
+        "ed": 4212,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 3117,
+    "total_end": 4212
+  },
+  {
+    "timeline_name": "P09_106_left_plate_2016_2679",
+    "vid": "P09_106",
+    "mp4_name": "P09_106_2507_2634_3197_left_plate",
+    "cat": "plate",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 2016,
+        "ed": 2613,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 2616,
+        "ed": 2679,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 2016,
+    "total_end": 2679
+  },
+  {
+    "timeline_name": "P09_106_right_cup_4142_4309",
+    "vid": "P09_106",
+    "mp4_name": "P09_106_3647_4213_4220_4512_right_cup",
+    "cat": "cup",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 4142,
+        "ed": 4212,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 4214,
+        "ed": 4309,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 4142,
+    "total_end": 4309
+  },
+  {
+    "timeline_name": "P11_104_right_pan_22709_23296",
+    "vid": "P11_104",
+    "mp4_name": "P11_104_22358_22871_23957_right_pan",
+    "cat": "pan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 22709,
+        "ed": 22826,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 22828,
+        "ed": 23296,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 22709,
+    "total_end": 23296
+  },
+  {
+    "timeline_name": "P11_104_right_pan_28712_29737",
+    "vid": "P11_104",
+    "mp4_name": "P11_104_28945_29113_30139_right_pan",
+    "cat": "pan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 28712,
+        "ed": 29006,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 29006,
+        "ed": 29030,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 29031,
+        "ed": 29138,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 29139,
+        "ed": 29665,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 29665,
+        "ed": 29737,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 28712,
+    "total_end": 29737
+  },
+  {
+    "timeline_name": "P11_104_right_pan_29148_29746",
+    "vid": "P11_104",
+    "mp4_name": "P11_104_29001_29308_30139_right_pan",
+    "cat": "pan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 29148,
+        "ed": 29647,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 29646,
+        "ed": 29746,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 29148,
+    "total_end": 29746
+  },
+  {
+    "timeline_name": "P13_10_left_plate_8660_9320",
+    "vid": "P13_10",
+    "mp4_name": "P13_10_7925_8677_9800_left_plate",
+    "cat": "plate",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 8660,
+        "ed": 8720,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 8721,
+        "ed": 9320,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 8660,
+    "total_end": 9320
+  },
+  {
+    "timeline_name": "P18_03_left_plate_44_1303",
+    "vid": "P18_03",
+    "mp4_name": "P18_03_370_665_904_left_plate",
+    "cat": "plate",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 44,
+        "ed": 553,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 553,
+        "ed": 638,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 640,
+        "ed": 715,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 715,
+        "ed": 730,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 730,
+        "ed": 1303,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 44,
+    "total_end": 1303
+  },
+  {
+    "timeline_name": "P22_07_left_pan_127855_128780",
+    "vid": "P22_07",
+    "mp4_name": "P22_07_127939_128339_129022_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 127855,
+        "ed": 128286,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 128286,
+        "ed": 128320,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 128322,
+        "ed": 128650,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 128651,
+        "ed": 128657,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 128657,
+        "ed": 128780,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 127855,
+    "total_end": 128780
+  },
+  {
+    "timeline_name": "P22_107_right_cup_5903_6940",
+    "vid": "P22_107",
+    "mp4_name": "P22_107_6279_6480_6754_right_cup",
+    "cat": "cup",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 5903,
+        "ed": 6033,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 6033,
+        "ed": 6461,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 6463,
+        "ed": 6666,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 6666,
+        "ed": 6755,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 6755,
+        "ed": 6940,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 5903,
+    "total_end": 6940
+  },
+  {
+    "timeline_name": "P22_117_right_bowl_33553_33677",
+    "vid": "P22_117",
+    "mp4_name": "P22_117_33492_33571_33630_right_bowl",
+    "cat": "bowl",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 33553,
+        "ed": 33581,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 33582,
+        "ed": 33677,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 33553,
+    "total_end": 33677
+  },
+  {
+    "timeline_name": "P24_09_left_pan_112818_113516",
+    "vid": "P24_09",
+    "mp4_name": "P24_09_113088_113448_113949_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 112818,
+        "ed": 113407,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 113407,
+        "ed": 113417,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 113418,
+        "ed": 113516,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 112818,
+    "total_end": 113516
+  },
+  {
+    "timeline_name": "P24_09_left_pan_64341_65831",
+    "vid": "P24_09",
+    "mp4_name": "P24_09_64561_65005_66073_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 64341,
+        "ed": 64941,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 64941,
+        "ed": 65831,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 64341,
+    "total_end": 65831
+  },
+  {
+    "timeline_name": "P25_101_left_bottle_379_1456",
+    "vid": "P25_101",
+    "mp4_name": "P25_101_857_1005_1444_left_bottle",
+    "cat": "bottle",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 379,
+        "ed": 949,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 949,
+        "ed": 980,
+        "side": "right",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 979,
+        "ed": 1456,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 379,
+    "total_end": 1456
+  },
+  {
+    "timeline_name": "P27_101_left_bottle_7566_7699",
+    "vid": "P27_101",
+    "mp4_name": "P27_101_7564_7677_7887_left_bottle",
+    "cat": "bottle",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 7566,
+        "ed": 7596,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 7599,
+        "ed": 7699,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 7566,
+    "total_end": 7699
+  },
+  {
+    "timeline_name": "P28_112_right_bowl_11825_13280",
+    "vid": "P28_112",
+    "mp4_name": "P28_112_11807_12663_12761_right_bowl",
+    "cat": "bowl",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 11825,
+        "ed": 12680,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 12683,
+        "ed": 13280,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 11825,
+    "total_end": 13280
+  },
+  {
+    "timeline_name": "P30_05_left_pan_29015_29269",
+    "vid": "P30_05",
+    "mp4_name": "P30_05_28143_28881_30013_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 29015,
+        "ed": 29176,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 29176,
+        "ed": 29269,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 29015,
+    "total_end": 29269
+  },
+  {
+    "timeline_name": "P30_05_left_pan_62527_63399",
+    "vid": "P30_05",
+    "mp4_name": "P30_05_62563_63127_63534_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 62527,
+        "ed": 63062,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 63062,
+        "ed": 63070,
+        "side": "left",
+        "ref": "scene_dynamic"
+      },
+      {
+        "st": 63072,
+        "ed": 63399,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 62527,
+    "total_end": 63399
+  },
+  {
+    "timeline_name": "P32_01_left_plate_25921_26353",
+    "vid": "P32_01",
+    "mp4_name": "P32_01_25164_25589_27067_left_plate",
+    "cat": "plate",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 25921,
+        "ed": 25981,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 25981,
+        "ed": 26353,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 25921,
+    "total_end": 26353
+  },
+  {
+    "timeline_name": "P35_105_left_pan_100445_101225",
+    "vid": "P35_105",
+    "mp4_name": "P35_105_100147_101001_101217_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 100445,
+        "ed": 101002,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 101001,
+        "ed": 101189,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 101189,
+        "ed": 101225,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 100445,
+    "total_end": 101225
+  },
+  {
+    "timeline_name": "P35_105_left_pan_74356_74922",
+    "vid": "P35_105",
+    "mp4_name": "P35_105_74570_74788_75998_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 74356,
+        "ed": 74701,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 74701,
+        "ed": 74762,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 74765,
+        "ed": 74780,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 74780,
+        "ed": 74922,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 74356,
+    "total_end": 74922
+  },
+  {
+    "timeline_name": "P35_105_left_pan_77964_78412",
+    "vid": "P35_105",
+    "mp4_name": "P35_105_77769_77976_78606_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 77964,
+        "ed": 78049,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 78052,
+        "ed": 78412,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 77964,
+    "total_end": 78412
+  },
+  {
+    "timeline_name": "P01_01_left_pan_21903_23266",
+    "vid": "P01_01",
+    "mp4_name": "P01_01_21784_22242_22872_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 21903,
+        "ed": 22096,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 22098,
+        "ed": 22669,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 22670,
+        "ed": 23266,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 21903,
+    "total_end": 23266
+  },
+  {
+    "timeline_name": "P01_01_left_pan_21903_23266",
+    "vid": "P01_01",
+    "mp4_name": "P01_01_21784_22242_22872_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 21903,
+        "ed": 22096,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 22098,
+        "ed": 22669,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 22670,
+        "ed": 23266,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 21903,
+    "total_end": 23266
+  },
+  {
+    "timeline_name": "P01_01_left_pan_85223_86793",
+    "vid": "P01_01",
+    "mp4_name": "P01_01_85702_85903_86269_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 85223,
+        "ed": 85822,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 85823,
+        "ed": 86195,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 86197,
+        "ed": 86723,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 86723,
+        "ed": 86793,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 85223,
+    "total_end": 86793
+  },
+  {
+    "timeline_name": "P01_05_right_saucepan_3628_3695",
+    "vid": "P01_05",
+    "mp4_name": "P01_05_3054_3455_4106_right_saucepan",
+    "cat": "saucepan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 3628,
+        "ed": 3684,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 3684,
+        "ed": 3695,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 3628,
+    "total_end": 3695
+  },
+  {
+    "timeline_name": "P01_05_right_bottle_73544_74450",
+    "vid": "P01_05",
+    "mp4_name": "P01_05_73568_73733_74529_right_bottle",
+    "cat": "bottle",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 73544,
+        "ed": 73655,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 73657,
+        "ed": 74450,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 73544,
+    "total_end": 74450
+  },
+  {
+    "timeline_name": "P01_05_left_bottle_74539_74711",
+    "vid": "P01_05",
+    "mp4_name": "P01_05_73858_74548_74613_74833_left_bottle",
+    "cat": "bottle",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 74539,
+        "ed": 74618,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 74619,
+        "ed": 74711,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 74539,
+    "total_end": 74711
+  },
+  {
+    "timeline_name": "P01_09_left_plate_93267_94233",
+    "vid": "P01_09",
+    "mp4_name": "P01_09_93536_93870_94630_left_plate",
+    "cat": "plate",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 93267,
+        "ed": 93867,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 93867,
+        "ed": 93917,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 93919,
+        "ed": 94233,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 93267,
+    "total_end": 94233
+  },
+  {
+    "timeline_name": "P01_14_left_pan_62294_62484",
+    "vid": "P01_14",
+    "mp4_name": "P01_14_61764_62114_62774_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 62294,
+        "ed": 62434,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 62434,
+        "ed": 62484,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 62294,
+    "total_end": 62484
+  },
+  {
+    "timeline_name": "P02_01_left_mug_5973_7186",
+    "vid": "P02_01",
+    "mp4_name": "P02_01_5922_6591_6945_left_mug",
+    "cat": "mug",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 5973,
+        "ed": 6572,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 6573,
+        "ed": 7186,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 5973,
+    "total_end": 7186
+  },
+  {
+    "timeline_name": "P02_09_left_pan_87120_88340",
+    "vid": "P02_09",
+    "mp4_name": "P02_09_87384_87720_88835_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 87120,
+        "ed": 87718,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 87720,
+        "ed": 88340,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 87120,
+    "total_end": 88340
+  },
+  {
+    "timeline_name": "P02_101_left_plate_6589_8122",
+    "vid": "P02_101",
+    "mp4_name": "P02_101_7052_7201_7309_left_plate",
+    "cat": "plate",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 6589,
+        "ed": 7186,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 7189,
+        "ed": 7525,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 7526,
+        "ed": 8122,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 6589,
+    "total_end": 8122
+  },
+  {
+    "timeline_name": "P02_122_right_plate_27346_27513",
+    "vid": "P02_122",
+    "mp4_name": "P02_122_27156_27501_28173_right_plate",
+    "cat": "plate",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 27346,
+        "ed": 27479,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 27478,
+        "ed": 27513,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 27346,
+    "total_end": 27513
+  },
+  {
+    "timeline_name": "P02_130_left_pan_42563_42900",
+    "vid": "P02_130",
+    "mp4_name": "P02_130_41257_42296_43478_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 42563,
+        "ed": 42754,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 42754,
+        "ed": 42900,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 42563,
+    "total_end": 42900
+  },
+  {
+    "timeline_name": "P02_130_left_pan_45213_45313",
+    "vid": "P02_130",
+    "mp4_name": "P02_130_43935_45271_45711_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 45213,
+        "ed": 45301,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 45299,
+        "ed": 45313,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 45213,
+    "total_end": 45313
+  },
+  {
+    "timeline_name": "P03_101_left_plate_31859_32014",
+    "vid": "P03_101",
+    "mp4_name": "P03_101_31291_31415_31664_left_plate",
+    "cat": "plate",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 31859,
+        "ed": 31893,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 31893,
+        "ed": 31963,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 31963,
+        "ed": 32014,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 31859,
+    "total_end": 32014
+  },
+  {
+    "timeline_name": "P04_110_left_mug_9641_10461",
+    "vid": "P04_110",
+    "mp4_name": "P04_110_10017_10242_10432_left_mug",
+    "cat": "mug",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 9641,
+        "ed": 10239,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 10241,
+        "ed": 10302,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 10303,
+        "ed": 10461,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 9641,
+    "total_end": 10461
+  },
+  {
+    "timeline_name": "P04_121_left_pan_35968_36652",
+    "vid": "P04_121",
+    "mp4_name": "P04_121_36422_36592_36835_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 35968,
+        "ed": 36567,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 36568,
+        "ed": 36612,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 36613,
+        "ed": 36652,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 35968,
+    "total_end": 36652
+  },
+  {
+    "timeline_name": "P04_121_left_bowl_52366_53006",
+    "vid": "P04_121",
+    "mp4_name": "P04_121_52169_52367_52406_52839_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 52366,
+        "ed": 52406,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 52407,
+        "ed": 53006,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 52366,
+    "total_end": 53006
+  },
+  {
+    "timeline_name": "P04_121_right_bowl_78109_79554",
+    "vid": "P04_121",
+    "mp4_name": "P04_121_77850_78106_78150_78825_right_bowl",
+    "cat": "bowl",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 78109,
+        "ed": 78956,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 78957,
+        "ed": 79554,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 78109,
+    "total_end": 79554
+  },
+  {
+    "timeline_name": "P06_108_left_pan_33517_34358",
+    "vid": "P06_108",
+    "mp4_name": "P06_108_33932_34117_34493_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 33517,
+        "ed": 34005,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 34007,
+        "ed": 34224,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 34224,
+        "ed": 34358,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 33517,
+    "total_end": 34358
+  },
+  {
+    "timeline_name": "P07_101_right_pan_16404_16741",
+    "vid": "P07_101",
+    "mp4_name": "P07_101_16518_16734_17162_right_pan",
+    "cat": "pan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 16404,
+        "ed": 16716,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 16717,
+        "ed": 16741,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 16404,
+    "total_end": 16741
+  },
+  {
+    "timeline_name": "P08_09_left_pan_23080_24070",
+    "vid": "P08_09",
+    "mp4_name": "P08_09_23074_23701_23982_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 23080,
+        "ed": 23678,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 23680,
+        "ed": 23761,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 23762,
+        "ed": 24070,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 23080,
+    "total_end": 24070
+  },
+  {
+    "timeline_name": "P08_09_left_pan_23080_24070",
+    "vid": "P08_09",
+    "mp4_name": "P08_09_23074_23701_23982_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 23080,
+        "ed": 23678,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 23680,
+        "ed": 23761,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 23762,
+        "ed": 24070,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 23080,
+    "total_end": 24070
+  },
+  {
+    "timeline_name": "P08_21_left_bowl_26148_27055",
+    "vid": "P08_21",
+    "mp4_name": "P08_21_26640_26751_26811_28266_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 26148,
+        "ed": 26746,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 26748,
+        "ed": 27055,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 26148,
+    "total_end": 27055
+  },
+  {
+    "timeline_name": "P08_21_left_bowl_44967_46363",
+    "vid": "P08_21",
+    "mp4_name": "P08_21_45241_45500_45951_47061_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 44967,
+        "ed": 45499,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 45501,
+        "ed": 46027,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 46028,
+        "ed": 46363,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 44967,
+    "total_end": 46363
+  },
+  {
+    "timeline_name": "P12_101_left_pan_24186_25365",
+    "vid": "P12_101",
+    "mp4_name": "P12_101_24398_24701_24865_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 24186,
+        "ed": 24378,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 24378,
+        "ed": 24701,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 24701,
+        "ed": 24766,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 24770,
+        "ed": 25227,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 25227,
+        "ed": 25365,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 24186,
+    "total_end": 25365
+  },
+  {
+    "timeline_name": "P12_101_left_mug_29154_30004",
+    "vid": "P12_101",
+    "mp4_name": "P12_101_29512_29701_30020_left_mug",
+    "cat": "mug",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 29154,
+        "ed": 29684,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 29686,
+        "ed": 30004,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 29154,
+    "total_end": 30004
+  },
+  {
+    "timeline_name": "P12_101_left_mug_29154_30004",
+    "vid": "P12_101",
+    "mp4_name": "P12_101_29512_29701_30020_left_mug",
+    "cat": "mug",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 29154,
+        "ed": 29684,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 29686,
+        "ed": 30004,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 29154,
+    "total_end": 30004
+  },
+  {
+    "timeline_name": "P18_03_right_mug_685_1348",
+    "vid": "P18_03",
+    "mp4_name": "P18_03_988_1305_1650_right_mug",
+    "cat": "mug",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 685,
+        "ed": 1284,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 1285,
+        "ed": 1348,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 685,
+    "total_end": 1348
+  },
+  {
+    "timeline_name": "P22_07_left_pan_124873_126185",
+    "vid": "P22_07",
+    "mp4_name": "P22_07_125192_125496_126171_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 124873,
+        "ed": 125358,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 125360,
+        "ed": 126077,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 126078,
+        "ed": 126185,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 124873,
+    "total_end": 126185
+  },
+  {
+    "timeline_name": "P22_07_left_pan_128654_129920",
+    "vid": "P22_07",
+    "mp4_name": "P22_07_128668_129022_129602_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 128654,
+        "ed": 128791,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 128793,
+        "ed": 129414,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 129414,
+        "ed": 129920,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 128654,
+    "total_end": 129920
+  },
+  {
+    "timeline_name": "P22_07_right_pan_32874_34102",
+    "vid": "P22_07",
+    "mp4_name": "P22_07_33012_33475_33741_right_pan",
+    "cat": "pan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 32874,
+        "ed": 33472,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 33474,
+        "ed": 33507,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 33507,
+        "ed": 34102,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 32874,
+    "total_end": 34102
+  },
+  {
+    "timeline_name": "P22_107_right_bowl_27211_27886",
+    "vid": "P22_107",
+    "mp4_name": "P22_107_27503_27871_27893_28859_right_bowl",
+    "cat": "bowl",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 27211,
+        "ed": 27744,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 27746,
+        "ed": 27886,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 27211,
+    "total_end": 27886
+  },
+  {
+    "timeline_name": "P23_02_left_plate_43624_44088",
+    "vid": "P23_02",
+    "mp4_name": "P23_02_42709_43922_44298_left_plate",
+    "cat": "plate",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 43624,
+        "ed": 43923,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 43923,
+        "ed": 44088,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 43624,
+    "total_end": 44088
+  },
+  {
+    "timeline_name": "P23_02_right_bottle_43370_44696",
+    "vid": "P23_02",
+    "mp4_name": "P23_02_43360_44040_44082_44733_right_bottle",
+    "cat": "bottle",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 43370,
+        "ed": 43967,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 43970,
+        "ed": 44097,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 44100,
+        "ed": 44696,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 43370,
+    "total_end": 44696
+  },
+  {
+    "timeline_name": "P24_08_right_plate_77520_78769",
+    "vid": "P24_08",
+    "mp4_name": "P24_08_77565_78120_78162_78299_right_plate",
+    "cat": "plate",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 77520,
+        "ed": 78117,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 78120,
+        "ed": 78173,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 78173,
+        "ed": 78769,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 77520,
+    "total_end": 78769
+  },
+  {
+    "timeline_name": "P24_09_left_bowl_108163_109676",
+    "vid": "P24_09",
+    "mp4_name": "P24_09_107960_108895_109902_left_bowl",
+    "cat": "bowl",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 108163,
+        "ed": 108761,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 108763,
+        "ed": 109227,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 109226,
+        "ed": 109676,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 108163,
+    "total_end": 109676
+  },
+  {
+    "timeline_name": "P25_101_left_pan_11765_13479",
+    "vid": "P25_101",
+    "mp4_name": "P25_101_11471_12096_12543_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 11765,
+        "ed": 12087,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 12087,
+        "ed": 12897,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 12897,
+        "ed": 13479,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 11765,
+    "total_end": 13479
+  },
+  {
+    "timeline_name": "P25_101_left_pan_18390_19782",
+    "vid": "P25_101",
+    "mp4_name": "P25_101_18950_19026_19874_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 18390,
+        "ed": 18950,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 18950,
+        "ed": 19140,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 19140,
+        "ed": 19782,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 18390,
+    "total_end": 19782
+  },
+  {
+    "timeline_name": "P25_101_left_pan_8289_9737",
+    "vid": "P25_101",
+    "mp4_name": "P25_101_8037_8550_9844_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 8289,
+        "ed": 8357,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 8359,
+        "ed": 9144,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 9144,
+        "ed": 9737,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 8289,
+    "total_end": 9737
+  },
+  {
+    "timeline_name": "P27_101_right_plate_44936_45059",
+    "vid": "P27_101",
+    "mp4_name": "P27_101_44682_45008_45727_right_plate",
+    "cat": "plate",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 44936,
+        "ed": 45002,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 45004,
+        "ed": 45059,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 44936,
+    "total_end": 45059
+  },
+  {
+    "timeline_name": "P28_103_left_cup_1742_2154",
+    "vid": "P28_103",
+    "mp4_name": "P28_103_1123_1701_2172_left_cup",
+    "cat": "cup",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 1742,
+        "ed": 1777,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 1777,
+        "ed": 2154,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 1742,
+    "total_end": 2154
+  },
+  {
+    "timeline_name": "P28_13_right_pan_2021_3188",
+    "vid": "P28_13",
+    "mp4_name": "P28_13_2361_2616_3115_right_pan",
+    "cat": "pan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 2021,
+        "ed": 2619,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 2622,
+        "ed": 2689,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 2689,
+        "ed": 3188,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 2021,
+    "total_end": 3188
+  },
+  {
+    "timeline_name": "P30_05_right_pan_38977_40285",
+    "vid": "P30_05",
+    "mp4_name": "P30_05_37886_39568_40531_right_pan",
+    "cat": "pan",
+    "main_side": "right",
+    "segments": [
+      {
+        "st": 38977,
+        "ed": 39021,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 39021,
+        "ed": 39414,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 39415,
+        "ed": 39540,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 39539,
+        "ed": 39693,
+        "side": "right",
+        "ref": "inhand"
+      },
+      {
+        "st": 39693,
+        "ed": 40221,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 40221,
+        "ed": 40285,
+        "side": "right",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 38977,
+    "total_end": 40285
+  },
+  {
+    "timeline_name": "P35_105_left_pan_11765_12797",
+    "vid": "P35_105",
+    "mp4_name": "P35_105_11559_12367_13063_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 11765,
+        "ed": 12364,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 12365,
+        "ed": 12395,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 12397,
+        "ed": 12797,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 11765,
+    "total_end": 12797
+  },
+  {
+    "timeline_name": "P35_105_left_pan_33305_34785",
+    "vid": "P35_105",
+    "mp4_name": "P35_105_33201_34101_35366_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 33305,
+        "ed": 33898,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 33899,
+        "ed": 34186,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 34188,
+        "ed": 34785,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 33305,
+    "total_end": 34785
+  },
+  {
+    "timeline_name": "P35_105_left_pan_77488_77962",
+    "vid": "P35_105",
+    "mp4_name": "P35_105_77408_77876_78449_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 77488,
+        "ed": 77858,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 77860,
+        "ed": 77900,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 77900,
+        "ed": 77962,
+        "side": null,
+        "ref": "scene_static"
+      }
+    ],
+    "total_start": 77488,
+    "total_end": 77962
+  },
+  {
+    "timeline_name": "P35_105_left_pan_80480_81265",
+    "vid": "P35_105",
+    "mp4_name": "P35_105_80080_80501_81585_left_pan",
+    "cat": "pan",
+    "main_side": "left",
+    "segments": [
+      {
+        "st": 80480,
+        "ed": 80685,
+        "side": "left",
+        "ref": "inhand"
+      },
+      {
+        "st": 80685,
+        "ed": 80781,
+        "side": null,
+        "ref": "scene_static"
+      },
+      {
+        "st": 80781,
+        "ed": 81265,
+        "side": "left",
+        "ref": "inhand"
+      }
+    ],
+    "total_start": 80480,
+    "total_end": 81265
+  }
+]

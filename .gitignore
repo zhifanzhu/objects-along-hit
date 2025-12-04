@@ -1,0 +1,8 @@
+.vscode/
+__pycache__/
+
+.cache/
+externals/
+outputs/
+
+DATA_STORAGE/

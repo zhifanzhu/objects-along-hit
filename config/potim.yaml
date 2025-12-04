@@ -1,0 +1,128 @@
+description: "Default"
+
+# Debug
+make_video: True                # Save action video, compare with original
+enable_tensorboard: False
+
+# Running arguments
+debug_index: null
+debug_locate: null 
+debug_segi: null                # only working for inhand_only
+load_from_segi: null            # not working for inhand_only
+index_from: 0
+index_to: 99999999
+only_cat: null
+skip_existing: True            # Skip existing results if fmt % pattern is saved
+
+# Passing control
+scene_static_alone: True         # If True, we DO NOT pass the pose from C to A. A is inisialised independently
+passing_rot_only: False         # Default False. If True, only take prev_rot_o2w, while o2h transl will be inited with priors
+bilateral_passing:  False               # If True, passing from both A's: forward will have init_idx=0, backward will habe init_idx=1
+passing_best_any_prior: True    # If True, we will pass the best inhand prior to the next segment
+inhand_load_from: null
+static_load_from: null
+static_only: False
+
+hydra:
+    sweep:
+        dir: outputs/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    run:
+        dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    job_logging:
+        handlers:
+            file:
+                filename: ${hydra.runtime.output_dir}/${hydra.job.name}-log.txt
+
+dataset:
+    version: ???
+    json_path: ???
+    skip_dynamic: ???
+
+    max_samples_per_seg: 30
+    occlude_level: 'all' # 'all' / 'ho'
+    roi_box_expand: 0.4
+    valid_frame_pixel_thr: 25       # If mask pixel area more than this, then this is a valid frame
+    
+    use_gt_init: False                      # ablation: what's the upper limit of init first A with GT?
+    static_o2w_init: 'priors'                           # one of 'upright' or 'priors'
+
+    inhand_pose_init: 'learnt-10'           # Only useful for inhand_only. Or 'gt' or 'learnt-10' or 'learnt-6'
+    inhand_only: False                      # ablation that does inhand segments only
+
+# preprocess:
+#     ihoi_box_expand: null # 0.3  # 1.0
+#     patch_crop_method: 'hand_obj_max'
+
+ablation:
+    static_always_gt: False
+
+potim:
+    ndof: 'N6' # 'N1'  # 'N0', 'N1', 'N6'
+    hand_init: 'hamer'  # 'frankmocap' / 'gt' / 'hamer'
+    optimize_hand: 'nn'  # 'nn', 'yn', 'yy'  first 'n' is PCA smooth, second 'n/y' is optimise R|T 
+
+optim_mv:
+    num_inits_parallel: 2
+
+    optimize_obj_rot:       True
+    optimize_obj_transl:    True
+    optimize_obj_scale:     False
+
+    n_samples_per_run: 30               # How many frames to use per iteration
+
+    # per epoch
+    num_iters: 100 # 200
+    lr: 1e-2
+    iter_tqdm: True
+    loss:
+        mask:
+            weight: 1.0
+        inside:
+            weight: 0.1             
+            num_nearest_points: 3   # For each p on obj, number of nearest points in hand
+        close:
+            weight: 0.1
+            num_priors: 5           # 5 for fingers, 8 for all regions
+            reduce: 'avg'           # 'avg' / 'min'
+            num_nearest_points: 1   # For each p on hand, number of nearest points in obj
+
+            contact_consistency:
+                weight: 1.0         # Was 10.0 before we separated it from l_close
+                method: 'fullmat_over_pairs'  # one of ['min_over_pairs', 'min_over_smooth', 'fullmat_over_pairs', 'fullmat_over_smooth']
+                regional_reduce: 'none'           # 'none' / 'min' / 'avg'
+
+        connection:
+            weight: 0                        # Disabled by default
+
+    ###### SCENE_DYNAMIC losses ####
+    loss_dynamic:  # Note this stands for SCENE_DYNAMIC, not the 'Dynamic' in the paper!
+        mask:
+            weight: 1.0
+        inside:
+            weight: 0.1             
+            num_nearest_points: 3   # For each p on obj, number of nearest points in hand
+        close:
+            weight: 0.1
+            num_priors: 5           # 5 for fingers, 8 for all regions
+            reduce: 'avg'           # 'avg' / 'min'
+            num_nearest_points: 1   # For each p on hand, number of nearest points in obj
+
+            contact_consistency:
+                weight: ???         # Was 10.0 before we separated it from l_close
+                method: 'fullmat_over_smooth'  # one of ['min_over_pairs', 'min_over_smooth', 'fullmat_over_pairs', 'fullmat_over_smooth']
+                regional_reduce: 'none'           # 'none' / 'min' / 'avg'
+
+        # contact_consistency:
+        #     weight: 0.1             # 1.0 = 0.1 * 10.0
+        #     num_priors: 5           # 5 for fingers, 8 for all regions
+        #     # reduce: 'avg'           # 'avg' / 'min'
+        #     num_nearest_points: 1   # For each p on hand, number of nearest points in obj
+        #     contact_consistency_weight: 10.0
+        #     # weight: 10.0
+        #     method: 'fullmat_over_smooth'  # one of ['min_over_pairs', 'min_over_smooth', 'fullmat_over_pairs', 'fullmat_over_smooth']
+        #     regional_reduce: 'none'           # 'none' / 'min' / 'avg'
+    ###### END OF SCENE_DYNAMIC losses ####
+    
+
+    # criterion: 'iou'
+    eval_unsafe: False

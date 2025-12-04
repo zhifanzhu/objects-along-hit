@@ -1,0 +1,126 @@
+description: "Hamer Static/1-DoF/Dynamic NN"
+
+# Debug
+action_video:
+    save: True                  # Save action video, compare with original
+
+save_pth: True
+
+# Running arguments
+extra_frame_index: null
+debug_index: null
+debug_locate: null 
+index_from: 0
+index_to: 99999999
+only_cat: null
+skip_existing: True            # Skip existing results if fmt % pattern is saved
+
+hydra:
+    sweep:
+        dir: outputs/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    run:
+        dir: outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+dataset:
+    version: 'epichor'
+    image_sets: 'code_epichor/image_sets/epicgrasps_2431.csv'
+    # image_sets: 'code_epichor/image_sets/legacy/epichor_round3_2447valid_nonempty.csv'
+    # occlude_level: 'all' # 'all' / 'ho' / 'none' 
+    disable_occlusion_ignore: False
+
+preprocess:
+    ihoi_box_expand: null # 0.3  # 1.0
+    patch_crop_method: 'hand_obj_max'
+
+homan:
+    version: 'dynamic'
+    hand_init: 'hamer'  # 'frankmocap' / 'gt' / 'hamer'
+    optimize_hand: 'nn'  # 'nn', 'yn', 'yy'  first 'n' is PCA smooth, second 'n/y' is optimise R|T 
+
+    rot_init:
+        default:
+            method: 'learnt'
+
+        bottle: 
+            method: 'default'
+        bowl:   
+            method: 'default'
+        can:    
+            method: 'default'
+        cup:    
+            method: 'default'
+        glass:  
+            method: 'default'
+        mug:    
+            method: 'default'
+        pan:    
+            method: 'default'
+        plate:  
+            method: 'default'
+        saucepan: 
+            method: 'default'
+    
+    scale_mode: 'scalar'            # Object scale mode: 'depth' / 'scalar' / 'xyz'
+    scale_init:
+        bottle: 'one'
+        bowl:   'one'
+        can:    'one'
+        cup:    'one'
+        glass:  'one'
+        mug:    'one'
+        pan:    'one'
+        plate:  'one'
+        saucepan: 'one'
+
+    transl_init_method:     'learnt'   # 'zero' / 'fingers'(finger centers) / 'mask' / 'gt'
+    rotation_regularization: False  # NotImplmented
+    scale_regularization: False
+
+optim_mv:
+    num_source: 30                 # How many images to take from the clip
+    num_eval: 30
+    num_inits: -1  # 100
+    num_inits_parallel: 1
+    train_size: 30                   # How many images to run in parallel
+
+    optimize_obj_rot:       True
+    optimize_obj_transl:    True
+    optimize_obj_scale:     True
+
+    translation_regularization: False  # For ECCV rebuttal
+
+    # per epoch
+    lr: 1e-2
+    num_iters: 50
+    vis_interval: -1  # 25
+    iter_tqdm: True
+    obj_sil_func: l2                # 'l2_iou', 'l2'. 
+    loss:
+        mask:
+            weight: 1.0
+        inside:
+            weight: 0.1             
+            num_nearest_points: 3   # For each p on obj, number of nearest points in hand
+        close:
+            weight: 0.1
+            num_priors: 5           # 5 for fingers, 8 for all regions
+            reduce: 'avg'           # 'avg' / 'min'
+            num_nearest_points: 1   # For each p on hand, number of nearest points in obj
+
+            contact_consistency:
+                weight: 10.0
+                method: 'fullmat_over_pairs'  # one of ['min_over_pairs', 'min_over_smooth', 'fullmat_over_pairs', 'fullmat_over_smooth']
+                regional_reduce: 'none'           # 'none' / 'min' / 'avg'
+
+        obj_upright:
+            weight: 0
+            apply_to: {'bowl'}
+
+        verbose: False              # to print loss values
+
+    criterion: 'iou'
+    eval_unsafe: False
+
+post_refine: False # True
+post_steps: ??? # 200
+post_refine_RT: True

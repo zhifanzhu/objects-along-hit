@@ -1,0 +1,25 @@
+Pillow==9.1.0
+easydict===1.9
+torch==2.0.0+cu118  # requires --extra-index-url https://download.pytorch.org/whl/cu118
+torchvision==0.15.1+cu118  # requires --extra-index-url https://download.pytorch.org/whl/cu118
+chumpy==0.70
+hydra-core==1.2
+smplx==0.1.28
+numpy==1.22.3
+matplotlib==3.7.5
+protobuf==3.20.1
+pandas==2.0.3
+moviepy==1.0.3
+opencv-python-headless==4.5.5.64
+tqdm==4.65.0
+trimesh==3.23.1
+scikit-image==0.21.0
+open3d==0.16.0
+colorama==0.4.6
+rtree==1.3.0
+dotmap==1.3.30
+einops==0.8.0
+tensorboard==2.15.0
+h5py==3.12.1
+libzhifan @ git+https://github.com/zhifanzhu/libzhifan@2ad671a2387ae3711c8f987ad24be96940c0d433
+fire==0.7.0

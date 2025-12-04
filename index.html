@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Reconstructing Objects along Hand Interaction Timelines in Egocentric Video.">
+  <meta name="keywords" content="ROHIT, Hand-Object Interaction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reconstructing Objects along Hand Interaction Timelines in Egocentric Video</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://zhifanzhu.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://epic-kitchens.github.io/epic-fields/">
+            EPIF Fields
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav> -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Reconstructing Objects along Hand Interaction Timelines in Egocentric Video</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://zhifanzhu.github.io">Zhifan Zhu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://sid2697.github.io/">Siddhant Bansal</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://sha2nkt.github.io/">Shashank Tripathi</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://dimadamen.github.io/">Dima Damen</a><sup>1</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Bristol, UK</span><br>
+            <span class="author-block"><sup>2</sup>Max Planck Institute for Intelligent Systems, Tübingen, Germany</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Arxiv 2025</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/xxxx.yyyy"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/zhifanzhu/objects-along-hit"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span style="line-height: 100%;">Code</span>
+                  </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/TODO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="padding-bottom: 0;">
+      <img src="./static/images/web-fig2.png">
+      <!-- <h2 class="subtitle has-text-centered">
+      </h2> -->
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        
+        <!-- Bottle Videos -->
+        <div class="item item-bottle1">
+          <video poster="" id="bottle1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/bottle/P02_12_left_hand_65290_65566_post.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Two Hand Videos -->
+        <div class="item item-can2">
+          <video poster="" id="can2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/can/two_hand_long.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Glass Videos -->
+        <div class="item item-glass1">
+          <video poster="" id="glass1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/glass/P02_09_left_hand_100875_101356_post.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-glass2">
+          <video poster="" id="glass2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/glass/P35_109_left_hand_55440_55505_action.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Bowl Videos -->
+        <div class="item item-bowl2">
+          <video poster="" id="bowl2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/bowl/P04_121_left_hand_38075_38146_post.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-bowl1">
+          <video poster="" id="bowl1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/bowl/P08_16_left_hand_625_808_post.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Cup Videos -->
+        <div class="item item-cup1">
+          <video poster="" id="cup1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cup/P09_02_left_hand_9590_9689_action.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-cup2">
+          <video poster="" id="cup2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/cup/P28_113_left_hand_3572_3683_post.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Mug Videos -->
+        <div class="item item-mug1">
+          <video poster="" id="mug1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mug/P02_124_left_hand_11220_11577_action.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mug2">
+          <video poster="" id="mug2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/mug/P12_101_left_hand_60004_60207_action.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Can Videos -->
+        <div class="item item-can1">
+          <video poster="" id="can1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/can/P06_05_left_hand_35894_37031_post.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Pan Videos -->
+        <div class="item item-pan1">
+          <video poster="" id="pan1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/pan/P01_01_left_hand_22098_22669_action.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-pan2">
+          <video poster="" id="pan2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/pan/P11_104_right_hand_29148_29647_action.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Plate Videos -->
+        <div class="item item-plate1">
+          <video poster="" id="plate1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/plate/P02_101_left_hand_7189_7525_post.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-plate2">
+          <video poster="" id="plate2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/plate/P30_07_right_hand_4697_4760_post.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Saucepan Videos -->
+        <div class="item item-saucepan1">
+          <video poster="" id="saucepan1" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/saucepan/P01_01_left_hand_70386_70723_action.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-saucepan2">
+          <video poster="" id="saucepan2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/saucepan/P01_05_right_hand_17692_17729_action.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-bottle2">
+          <video poster="" id="bottle2" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/bottle/P01_14_left_hand_58993_59073_post.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce the task of Reconstructing Objects along Hand Interaction Timelines (ROHIT). 
+            We first define the Hand Interaction Timeline (HIT) from a rigid object's perspective. 
+            In a HIT, an object is first static relative to the scene, then is held in hand following contact, where its pose changes. 
+            This is usually followed by a firm grip during use, before it is released to be static again w.r.t. to the scene. 
+            We model these pose constraints over the HIT, 
+            and propose to propagate the object's pose along the HIT enabling superior reconstruction using our proposed Constrained Optimisation and Propagation (COP) framework. 
+            Importantly, we focus on timelines with stable grasps — i.e. where the hand is stably holding an object, effectively maintaining constant contact during use. 
+            This allows us to efficiently annotate, study, and evaluate object reconstruction in videos without 3D ground truth.
+
+            We evaluate our proposed task, ROHIT, over two egocentric datasets, HOT3D and in-the-wild EPIC-Kitchens. 
+            In HOT3D, we curate 1.2K clips of stable grasps. 
+            In EPIC-Kitchens, we annotate 2.4K clips of stable grasps including 390 object instances across 9 categories from videos of daily interactions in 141 environments. 
+            Without 3D ground truth, we utilise 2D projection error to assess the reconstruction. 
+            Quantitatively, COP improves stable grasp reconstruction by 6.2-11.3% and HIT reconstruction by up to 24.5% with constrained pose propagation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{xxxx,
+    title={xxxxxxxxx},
+    author={xxxxxxxxxxx},
+    year={xxxxxxxx},
+    eprint={xxxxx.xxxxx},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <!-- <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

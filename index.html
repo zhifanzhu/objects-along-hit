@@ -27,37 +27,6 @@
 </head>
 <body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://zhifanzhu.github.io">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://epic-kitchens.github.io/epic-fields/">
-            EPIF Fields
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav> -->
-
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -133,9 +102,13 @@
 </section>
 
 <section class="hero teaser">
+  <h2 class="subtitle has-text-centered">
+    <b>tl;dr:</b> A constrained optimisation framework that reconstructs object poses in egocentric video <br>
+    by modelling temporal constraints, from static to stably grasped.
+  </h2>
   <div class="container is-max-desktop">
-    <div class="hero-body" style="padding-bottom: 0;">
-      <img src="./static/images/web-fig2.png">
+    <div class="hero-body" style="padding-bottom: 0; width: 80%; margin: auto;">
+      <img src="./static/images/web-teaser.png">
       <!-- <h2 class="subtitle has-text-centered">
       </h2> -->
     </div>
@@ -143,128 +116,108 @@
 </section>
 
 
+<!-- MAIN VIDEO GALLERY SHOWCASING IN-THE-WILD RESULTS -->
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        
-        <!-- Bottle Videos -->
-        <div class="item item-bottle1">
-          <video poster="" id="bottle1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/bottle/P02_12_left_hand_65290_65566_post.mp4" type="video/mp4">
-          </video>
-        </div>
 
-        <!-- Two Hand Videos -->
-        <div class="item item-can2">
-          <video poster="" id="can2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/can/two_hand_long.mp4" type="video/mp4">
-          </video>
-        </div>
+  <h2 class="title has-text-centered">
+    Results on challenging in-the-wild sequences
+  </h2>
 
-        <!-- Glass Videos -->
-        <div class="item item-glass1">
-          <video poster="" id="glass1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/glass/P02_09_left_hand_100875_101356_post.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-glass2">
-          <video poster="" id="glass2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/glass/P35_109_left_hand_55440_55505_action.mp4" type="video/mp4">
-          </video>
-        </div>
+  <p style="text-align: center;">
+    <b>Top-left:</b> input egocentric frame. <b>Top-centre</b>: input egocentric frame with overlaid 3D results. <b>Top-right</b>: rotated views of 3D results.
+    <br>
+    <b>Bottom</b>: 3D results with camera poses in the world coordinate.&emsp;
+     <!-- INSERTED ICON HERE -->
+    <img src="./static/images/campose.png" 
+         style="height: 1.5em; vertical-align: middle; margin-left: 5px;" 
+         alt="camera pose icon">: camera pose.
+    <br>
+    <i>Frames with objects only</i>: static segments.
 
-        <!-- Bowl Videos -->
-        <div class="item item-bowl2">
-          <video poster="" id="bowl2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/bowl/P04_121_left_hand_38075_38146_post.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-bowl1">
-          <video poster="" id="bowl1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/bowl/P08_16_left_hand_625_808_post.mp4" type="video/mp4">
-          </video>
-        </div>
+  </p>
 
-        <!-- Cup Videos -->
-        <div class="item item-cup1">
-          <video poster="" id="cup1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/cup/P09_02_left_hand_9590_9689_action.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-cup2">
-          <video poster="" id="cup2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/cup/P28_113_left_hand_3572_3683_post.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Mug Videos -->
-        <div class="item item-mug1">
-          <video poster="" id="mug1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mug/P02_124_left_hand_11220_11577_action.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mug2">
-          <video poster="" id="mug2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mug/P12_101_left_hand_60004_60207_action.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Can Videos -->
-        <div class="item item-can1">
-          <video poster="" id="can1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/can/P06_05_left_hand_35894_37031_post.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Pan Videos -->
-        <div class="item item-pan1">
-          <video poster="" id="pan1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pan/P01_01_left_hand_22098_22669_action.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-pan2">
-          <video poster="" id="pan2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pan/P11_104_right_hand_29148_29647_action.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Plate Videos -->
-        <div class="item item-plate1">
-          <video poster="" id="plate1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/plate/P02_101_left_hand_7189_7525_post.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-plate2">
-          <video poster="" id="plate2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/plate/P30_07_right_hand_4697_4760_post.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Saucepan Videos -->
-        <div class="item item-saucepan1">
-          <video poster="" id="saucepan1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/saucepan/P01_01_left_hand_70386_70723_action.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-saucepan2">
-          <video poster="" id="saucepan2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/saucepan/P01_05_right_hand_17692_17729_action.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="item item-bottle2">
-          <video poster="" id="bottle2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/bottle/P01_14_left_hand_58993_59073_post.mp4" type="video/mp4">
-          </video>
-        </div>
+      <!-- Main video -->
+      <div class="video-gallery">
+        <video id="main-video" autoplay controls muted loop playsinline>
+          <source id="main-video-source"
+                  src="./static/videos/P01_05_right_bottle_73544_74450.mp4"
+                  type="video/mp4">
+        </video>
 
       </div>
+
+      <!-- Thumbnails -->
+      <div class="thumbnails">
+        <img class="thumb is-active"
+             src="./static/thumbs/P01_05_right_bottle_73544_74450.png"
+             data-video="./static/videos/P01_05_right_bottle_73544_74450.mp4"
+             alt="P01_05_right_bottle_73544_74450">
+
+        <img class="thumb"
+             src="./static/thumbs/P02_09_left_bottle_29247_30547.png"
+             data-video="./static/videos/P02_09_left_bottle_29247_30547.mp4"
+             alt="P02_09_left_bottle_29247_30547">
+
+        <img class="thumb"
+            src="./static/thumbs/P01_01_left_pan_85223_86793.png"
+            data-video="./static/videos/P01_01_left_pan_85223_86793.mp4"
+            alt="P01_01_left_pan_85223_86793">
+
+        <img class="thumb"
+            src="./static/thumbs/P01_09_left_plate_93267_94233.png"
+            data-video="./static/videos/P01_09_left_plate_93267_94233.mp4"
+            alt="P01_09_left_plate_93267_94233">
+
+        <img class="thumb"
+            src="./static/thumbs/P02_01_left_mug_5973_7186.png"
+            data-video="./static/videos/P02_01_left_mug_5973_7186.mp4"
+            alt="P02_01_left_mug_5973_7186">
+
+        <img class="thumb"
+            src="./static/thumbs/P09_02_left_bowl_21343_22185.png"
+            data-video="./static/videos/P09_02_left_bowl_21343_22185.mp4"
+            alt="P09_02_left_bowl_21343_22185">
+
+        <img class="thumb"
+            src="./static/thumbs/P11_104_right_pan_29148_29746.png"
+            data-video="./static/videos/P11_104_right_pan_29148_29746.mp4"
+            alt="P11_104_right_pan_29148_29746">
+
+        <img class="thumb"
+            src="./static/thumbs/P12_101_left_mug_29154_30004.png"
+            data-video="./static/videos/P12_101_left_mug_29154_30004.mp4"
+            alt="P12_101_left_mug_29154_30004">
+
+        <img class="thumb"
+            src="./static/thumbs/P22_107_right_cup_5903_6940.png"
+            data-video="./static/videos/P22_107_right_cup_5903_6940.mp4"
+            alt="P22_107_right_cup_5903_6940">
+
+        <img class="thumb"
+            src="./static/thumbs/P28_112_right_bowl_11825_13280.png"
+            data-video="./static/videos/P28_112_right_bowl_11825_13280.mp4"
+            alt="P28_112_right_bowl_11825_13280">
+
+        <img class="thumb"
+            src="./static/thumbs/P23_02_left_plate_43624_44088.png"
+            data-video="./static/videos/P23_02_left_plate_43624_44088.mp4"
+            alt="P23_02_left_plate_43624_44088">
+
+        <img class="thumb"
+            src="./static/thumbs/P25_101_left_bottle_379_1456.png"
+            data-video="./static/videos/P25_101_left_bottle_379_1456.mp4"
+            alt="P25_101_left_bottle_379_1456">
+            
+      </div>
+
     </div>
   </div>
 </section>
 
 
+<!-- ABSTRACT -->
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -274,14 +227,16 @@
         <div class="content has-text-justified">
           <p>
             We introduce the task of Reconstructing Objects along Hand Interaction Timelines (ROHIT). 
-            We first define the Hand Interaction Timeline (HIT) from a rigid object's perspective. 
+            We first define the <u>H</u>and <u>I</u>nteraction <u>T</u>imeline (HIT) from a rigid object's perspective. 
             In a HIT, an object is first static relative to the scene, then is held in hand following contact, where its pose changes. 
             This is usually followed by a firm grip during use, before it is released to be static again w.r.t. to the scene. 
             We model these pose constraints over the HIT, 
-            and propose to propagate the object's pose along the HIT enabling superior reconstruction using our proposed Constrained Optimisation and Propagation (COP) framework. 
+            and propose to propagate the object's pose along the HIT enabling superior reconstruction using our proposed <u>C</u>onstrained <u>O</u>ptimisation and <u>P</u>ropagation (COP) framework. 
             Importantly, we focus on timelines with stable grasps — i.e. where the hand is stably holding an object, effectively maintaining constant contact during use. 
             This allows us to efficiently annotate, study, and evaluate object reconstruction in videos without 3D ground truth.
-
+            <!-- <br> -->
+          </p>
+          <p>
             We evaluate our proposed task, ROHIT, over two egocentric datasets, HOT3D and in-the-wild EPIC-Kitchens. 
             In HOT3D, we curate 1.2K clips of stable grasps. 
             In EPIC-Kitchens, we annotate 2.4K clips of stable grasps including 390 object instances across 9 categories from videos of daily interactions in 141 environments. 
@@ -307,6 +262,126 @@
   </div>
 </section>
 
+
+<!-- MORE IN-THE-WILD STABLE GRASPS RESULTS USING THUMBNAIL -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <h2 class="title has-text-centered">
+          More in-the-wild Stable Grasps Results
+      </h2>
+      
+      <div class="sg-video-gallery">
+        <!-- Default video -->
+        <video id="sg-video" autoplay controls muted loop playsinline height="100%">
+          <source id="sg-video-source"
+                  src="./static/stablegrasp_videos/bottle/P01_14_left_hand_58993_59073_action.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+
+      <div class="sg-thumbnails">
+        
+        <!-- BOTTLE -->
+        <img class="thumb is-active" 
+             src="./static/stablegrasp_thumbs/bottle/P01_14_left_hand_58993_59073_action.png"
+             data-video="./static/stablegrasp_videos/bottle/P01_14_left_hand_58993_59073_action.mp4"
+             alt="P01_14_left_hand_58993_59073_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/bottle/P02_09_left_hand_67864_67947_action.png"
+             data-video="./static/stablegrasp_videos/bottle/P02_09_left_hand_67864_67947_action.mp4"
+             alt="P02_09_left_hand_67864_67947_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/bottle/P06_03_left_hand_19268_19549_action.png"
+             data-video="./static/stablegrasp_videos/bottle/P06_03_left_hand_19268_19549_action.mp4"
+             alt="P06_03_left_hand_19268_19549_action">
+
+        <!-- BOWL -->
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/bowl/P03_120_left_hand_37223_37347_action.png"
+             data-video="./static/stablegrasp_videos/bowl/P03_120_left_hand_37223_37347_action.mp4"
+             alt="P03_120_left_hand_37223_37347_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/bowl/P08_16_left_hand_625_808_action.png"
+             data-video="./static/stablegrasp_videos/bowl/P08_16_left_hand_625_808_action.mp4"
+             alt="P08_16_left_hand_625_808_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/bowl/P22_107_right_hand_20145_20246_action.png"
+             data-video="./static/stablegrasp_videos/bowl/P22_107_right_hand_20145_20246_action.mp4"
+             alt="P22_107_right_hand_20145_20246_action">
+
+        <!-- CAN -->
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/can/P02_09_left_hand_10416_10752_action.png"
+             data-video="./static/stablegrasp_videos/can/P02_09_left_hand_10416_10752_action.mp4"
+             alt="P02_09_left_hand_10416_10752_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/can/P30_05_left_hand_68640_68737_action.png"
+             data-video="./static/stablegrasp_videos/can/P30_05_left_hand_68640_68737_action.mp4"
+             alt="P30_05_left_hand_68640_68737_action">
+
+        <!-- GLASS -->
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/glass/P01_09_left_hand_174538_174756_action.png"
+             data-video="./static/stablegrasp_videos/glass/P01_09_left_hand_174538_174756_action.mp4"
+             alt="P01_09_left_hand_174538_174756_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/glass/P27_101_right_hand_57039_57087_action.png"
+             data-video="./static/stablegrasp_videos/glass/P27_101_right_hand_57039_57087_action.mp4"
+             alt="P27_101_right_hand_57039_57087_action">
+
+        <!-- MUG -->
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/mug/P02_101_left_hand_11611_11690_action.png"
+             data-video="./static/stablegrasp_videos/mug/P02_101_left_hand_11611_11690_action.mp4"
+             alt="P02_101_left_hand_11611_11690_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/mug/P04_110_left_hand_7540_8536_action.png"
+             data-video="./static/stablegrasp_videos/mug/P04_110_left_hand_7540_8536_action.mp4"
+             alt="P04_110_left_hand_7540_8536_action">
+
+        <!-- PAN -->
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/pan/P01_01_left_hand_7430_7541_action.png"
+             data-video="./static/stablegrasp_videos/pan/P01_01_left_hand_7430_7541_action.mp4"
+             alt="P01_01_left_hand_7430_7541_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/pan/P01_05_right_hand_20658_20696_action.png"
+             data-video="./static/stablegrasp_videos/pan/P01_05_right_hand_20658_20696_action.mp4"
+             alt="P01_05_right_hand_20658_20696_action">
+
+        <!-- PLATE -->
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/plate/P01_09_left_hand_158727_159675_action.png"
+             data-video="./static/stablegrasp_videos/plate/P01_09_left_hand_158727_159675_action.mp4"
+             alt="P01_09_left_hand_158727_159675_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/plate/P25_107_left_hand_102550_102635_action.png"
+             data-video="./static/stablegrasp_videos/plate/P25_107_left_hand_102550_102635_action.mp4"
+             alt="P25_107_left_hand_102550_102635_action">
+
+        <img class="thumb" 
+             src="./static/stablegrasp_thumbs/plate/P30_07_right_hand_4697_4760_action.png"
+             data-video="./static/stablegrasp_videos/plate/P30_07_right_hand_4697_4760_action.mp4"
+             alt="P30_07_right_hand_4697_4760_action">
+             
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -322,6 +397,7 @@
 </section>
 
 
+<!-- BOTTOM ACKKNOWLEDGEMENTS AND LICENSE -->
 <footer class="footer">
   <div class="container">
     <!-- <div class="content has-text-centered">
@@ -336,6 +412,17 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
+          <p>
+            <b>Acknowledgements:</b> This work is supported by EPSRC UMPIRE EP/T004991/1. 
+            Zhifan Zhu is supported by UoB-CSC scholarship. 
+            Siddhant Bansal is supported by a Charitable Donation to the University of Bristol from Meta. 
+            Shashank Tripathi is supported by the International Max Planck Research School for Intelligent Systems (IMPRS-IS). 
+            We thank Ahmad Darkhalil for helps with VISOR masks.
+          </p>
+          <p>
+            Video thumbnail design inspired by <a
+              href="https://fanegg.github.io/Human3R/">Human3R</a>.
+          </p>
           <p>
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative

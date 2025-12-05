@@ -21,11 +21,6 @@ body {
     margin-bottom: 5px;
 }
 
-.dnerf {
-  font-variant: small-caps;
-}
-
-
 .teaser .hero-body {
   padding-top: 0;
   padding-bottom: 3rem;
@@ -162,4 +157,90 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+
+/* MAIN VIDEO GALLERY SHOWCASING IN-THE-WILD RESULTS */
+.video-gallery video {
+  display: block;
+  margin: 0 auto 1rem;   /* centre horizontally */
+  max-width: 1200px;     /* your desired max width */
+  width: 100%;
+  height: auto;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.thumbnails .thumb {
+  width: 140px;          /* size of thumbnail */
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+
+.thumbnails .thumb.is-active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px #3273dc; /* Bulma primary */
+}
+
+.main-video-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Reserve space: 16:9 box, no height collapse */
+#main-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;     /* adjust if your videos are different */
+  display: block;
+  object-fit: contain;       /* or 'cover' if you prefer */
+}
+
+/* Stable Grasp Video Gallery */
+.sg-video-gallery video {
+  display: block;
+  margin: 0 auto 1rem;   /* centre horizontally */
+  max-width: 1200px;     /* your desired max width */
+  width: 100%;
+  height: auto;
+}
+#sg-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 20 / 5;     /* adjust if your videos are different */
+  display: block;
+  object-fit: contain;       /* or 'cover' if you prefer */
+}
+
+.sg-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.sg-thumbnails .thumb {
+  width: 140px;          /* size of thumbnail */
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  transition: all 0.2s ease;
+}
+
+.sg-thumbnails .thumb:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.sg-thumbnails .thumb.is-active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px #3273dc; /* Bulma primary */
 }

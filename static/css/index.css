@@ -182,6 +182,12 @@ body {
   opacity: 0.6;
   border-radius: 6px;
   border: 1px solid #bbb;
+  transition: all 0.2s ease;
+}
+
+.thumbnails .thumb:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .thumbnails .thumb.is-active {
@@ -202,6 +208,7 @@ body {
   display: block;
   object-fit: contain;       /* or 'cover' if you prefer */
 }
+
 
 /* Stable Grasp Video Gallery */
 .sg-video-gallery video {

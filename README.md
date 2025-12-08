@@ -1,6 +1,8 @@
 
 # Reconstructing Objects along Hand Interaction Timelines in Egocentric Video
 
+![Video](https://github.com/user-attachments/assets/fd55aec9-1195-4491-8f9c-4d61c8d26f5e)
+
 [[Project Page]](https://zhifanzhu.github.io/objects-along-hit) [[arxiv]](https://arxiv.org/abs/xxxx.yyyy)
 
 

@@ -3,10 +3,6 @@
 
 [[Project Page]](https://zhifanzhu.github.io/objects-along-hit) [[arxiv]](https://arxiv.org/abs/xxxx.yyyy)
 
-<video width="640" controls>
-  <source src="https://github.com/zhifanzhu/objects-along-hit/raw/refs/heads/gh-pages/static/videos/P01_01_left_pan_85223_86793.mp4" type="video/mp4">
-</video>
-
 
 ## Annotations
 
@@ -77,9 +73,9 @@ The 2.4K stable grasp annotations for EPIC-HITCHENS-100 can be found in [code_ep
 - `handside`: either "left hand" or "right hand"
 
 Additionally:
-- `fmt`: The prefix of output, e.g. 'bottle/P01_14_left_hand_57890_57947_*'
+- `fmt`: The prefix of output, e.g. `bottle/P01_14_left_hand_57890_57947_*`
 
-Correction: we found a few (6) incorrect annotations in the original CSV file are incorrect. The corrections are not integrated into the original annotation, and can be found in [code_epichor/image_sets/epicgrasps_2431_errata.csv](code_epichor/image_sets/epicgrasps_2431_errata.csv).
+Errata: we found a few (6) incorrect annotations in the original CSV file are incorrect. The corrections are not integrated into the original annotation, and can be found in [code_epichor/image_sets/epicgrasps_2431_errata.csv](code_epichor/image_sets/epicgrasps_2431_errata.csv).
 
 
 ## Installation
@@ -118,10 +114,10 @@ Source:  https://github.com/JudyYe/ihoi/blob/main/docs/install.md
 ## Download Data
 
 At this moment, we provide pre-extracted masks, HaMeR results for running EPIC-HIT experiments. 
-The example data for EPIC-HIT can be downloaded from: [In progress].
+The example data for EPIC-HIT can be downloaded from: [Temporary One Drive Link](https://uob-my.sharepoint.com/:u:/g/personal/ms21614_bristol_ac_uk/EZf3Sx6ArOtIhwybgsQA51IBGGwCA7UYnYzVP_FjAp-k8w?e=FbG4wd).
 
 <details>
-<summary>Structure of the data directory after downloading:</summary>
+<summary>Structure of the data directory after downloading and extracting:</summary>
 
 ```
 # DATA_STORAGE/ directory is at the same level as README.md
@@ -183,6 +179,37 @@ HYDRA_FULL_ERROR=1 python potim/run_e2e_v6_segwise_ondemand.py \
   use_old_sca=False \
   debug_locate=P12_101_left_mug_29154_30004
 ```
+
+### Checking EPIC-HIT results
+
+The visualisation of the 3D result will be saved to
+`outputs/<date>-epic/e2e_v6/<timeline-name>/FullAfter.mp4`.
+  -  e.g. `outputs/2025-12-07-epic/e2e_v6/P12_101_left_mug_29154_30004/FullAfter.mp4` for the timeline above.
+
+The quantitative result of each sequence is saved to `outputs/<date>-epic/e2e_v6/evaluation/<timeline-name>.csv`
+  - e.g. `outputs/2025-12-07-epic/e2e_v6/evaluation/P12_101_left_mug_29154_30004.csv` for the timeline above.
+  - `segi` indicates the segment index in the timeline. `ref` indicates the segment type (static/unstable/stable-grasp). `oiou` and `avg_sca` correspond to the IOU and SCA in the paper.
+
+To reproduce Table-5 in the paper, run:
+
+```python
+python draft/tables/epic_v6_results.py <path-to-result-folder> --separate_hand False
+# e.g. python draft/tables/epic_v6_results.py outputs/2025-12-07-epic/e2e_v6/ --separate_hand False
+```
+
+<details>
+<summary> It should produce the output below (click to expand):</summary>
+
+![Table-5 Screenshot](./docs/assets/Table-5-screenshot.png)
+
+which corresponds to the following entries in the paper:
+| Method              | Stable Grasp IOU | Stable Grasp SCA@0.8 |
+|---------------------|------------------|------------------------|
+| COP w/o propagation | 68.0             | 23.8                   |
+| COP                 | 69.2             | 25.5                   |
+
+The other entries can also be found in the output in the according to the segment type and metric.
+</details>
 
 ### HOT3D-HIT
 

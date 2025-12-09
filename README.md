@@ -3,7 +3,7 @@
 
 ![Video](https://github.com/user-attachments/assets/fd55aec9-1195-4491-8f9c-4d61c8d26f5e)
 
-[[Project Page]](https://zhifanzhu.github.io/objects-along-hit) [[arxiv]](https://arxiv.org/abs/xxxx.yyyy)
+[[Project Page]](https://zhifanzhu.github.io/objects-along-hit) [[arxiv]](https://arxiv.org/abs/2512.07394)
 
 
 ## Annotations
@@ -263,4 +263,14 @@ This code uses parts of code from the following repositories:
 
 ## Citation
 
-Arxiv version coming soon.
+```bibtex
+@misc{zhu2025reconstructingobjectshandinteraction,
+      title={Reconstructing Objects along Hand Interaction Timelines in Egocentric Video}, 
+      author={Zhifan Zhu and Siddhant Bansal and Shashank Tripathi and Dima Damen},
+      year={2025},
+      eprint={2512.07394},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.07394}, 
+}
+```

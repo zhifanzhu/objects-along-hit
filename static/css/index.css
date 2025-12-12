@@ -251,3 +251,8 @@ body {
   opacity: 1;
   box-shadow: 0 0 0 2px #3273dc; /* Bulma primary */
 }
+
+.download-annotations {
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+}

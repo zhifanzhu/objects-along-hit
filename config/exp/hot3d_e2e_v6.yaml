@@ -10,6 +10,7 @@ which_only: 'fullpassing'              # one of {'fullpassing', 'static', 'inhan
                                        # i.e. Passing, A-only or C-only
 segi_strategy: 'two-circle'            # one of {'normal', 'one-way', 'circle', 'two-circle'},
                                        # see potim/utils/propagation_helpers.py:segi_scheduler()
+                                       # In arXiv, results are run with 'circle'
             
 dataset:
     version: 'hot3d'

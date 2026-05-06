@@ -116,7 +116,7 @@ Source:  https://github.com/JudyYe/ihoi/blob/main/docs/install.md
 ## Download Data
 
 At this moment, we provide pre-extracted masks, HaMeR results for running EPIC-HIT experiments. 
-The example data for EPIC-HIT can be downloaded from: [Temporary One Drive Link](https://uob-my.sharepoint.com/:u:/g/personal/ms21614_bristol_ac_uk/IQCX90segKzrSIcMm4LEAOdSARhsAgO1GJ2M1T_xYwKfpPM?e=FCJZRN).
+The example data for EPIC-HIT can be downloaded from: [Google Drive Link](https://drive.google.com/file/d/12bSV-deH0lrrHNynnFa4rYiYpwDMWs38/view?usp=sharing).
 
 <details>
 <summary>Structure of the data directory after downloading and extracting:</summary>
